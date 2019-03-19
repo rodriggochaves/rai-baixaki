@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
   def file
     send_file(
-      "#{Rails.root}/public/phoyo.png.zip",
-      filename: "auge_da_beleza.zip",
+      "#{Rails.root}/public/NovaIconSet_v1.zip",
+      filename: "NovaIconSet_v1.zip",
       type: "application/zip"
     )
   end
