@@ -6,4 +6,12 @@ class ApplicationController < ActionController::Base
       type: "application/zip"
     )
   end
+
+  def toolkit
+    send_file(
+      "#{Rails.root}/public/DesignSToolKit.zip",
+      filename: "DesignSToolKit_v1.zip",
+      type: "application/zip"
+    )
+  end
 end
